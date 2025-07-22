@@ -72,4 +72,9 @@ backToTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+// Dark Mode Toggle
+const toggle = document.getElementById('darkModeToggle');
+toggle.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});
 
