@@ -483,5 +483,49 @@ body.loaded #loader {
 .whatsapp-float img:hover {
   transform: scale(1.1);
 }
+/* Newsletter Section */
+#newsletter {
+  padding: 60px 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+#newsletter h2 {
+  margin-bottom: 10px;
+}
+
+#newsletter p {
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  max-width: 100%;
+}
+
+.newsletter-form .btn {
+  background-color: #00c853;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form .btn:hover {
+  background-color: #00b347;
+}
 
 
