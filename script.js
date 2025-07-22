@@ -1,4 +1,5 @@
-
+// Back to Top Button
+const backToTopBtn = document.getElementById("backToTop");
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', function (e) {
@@ -56,8 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.toggle("active");
   });
 });
-// Back to Top Button
-const backToTopBtn = document.getElementById("backToTop");
+
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 200) {
