@@ -1,10 +1,11 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base body styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -111,6 +112,37 @@ section h2 {
   font-size: 32px;
 }
 
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #00bcd4;
+}
+
+.card p {
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
 /* Footer */
 footer {
   background: #111;
@@ -118,4 +150,19 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
+}
+
+/* Responsive Nav (Optional for future) */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+  }
+
+  .logo,
+  nav {
+    float: none;
+    text-align: center;
+  }
 }
