@@ -549,5 +549,23 @@ body.loaded #loader {
 #backToTop:hover {
   background-color: #0056b3;
 }
+/* Social Icons in Footer */
+footer .social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .social-icons img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
 
 
