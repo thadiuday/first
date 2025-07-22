@@ -1,5 +1,4 @@
-// Back to Top Button
-const backToTopBtn = document.getElementById("backToTop");
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', function (e) {
@@ -67,12 +66,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
+
 // Dark Mode Toggle
 const toggle = document.getElementById('darkModeToggle');
 toggle.addEventListener('change', () => {
@@ -101,6 +95,13 @@ window.addEventListener("scroll", () => {
   }
 });
 
-backToTopBtn.addEventListener("click", () => {
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+backToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
