@@ -82,3 +82,11 @@ toggle.addEventListener('change', () => {
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
 });
+// FAQ Accordion Toggle
+document.querySelectorAll('.accordion-title').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  });
+});
