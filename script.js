@@ -78,3 +78,7 @@ toggle.addEventListener('change', () => {
   document.body.classList.toggle('dark');
 });
 
+// Loader hide after page load
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
